@@ -1,0 +1,19 @@
+{
+  "name": "s1db",
+  "version": "0.0.1",
+  "description": "An S1 client for Node.js",
+  "main": "index.js",
+  "repository": "https://github.com/kognise/s1-node/",
+  "author": "Kognise <hi@kognise.dev>",
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "ava": "^3.7.0"
+  }
+}
