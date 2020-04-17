@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+const fetch = require('isomorphic-unfetch')
 
 /**
  * Base S1 client connector class.
