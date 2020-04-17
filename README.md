@@ -39,3 +39,8 @@ await db.getRaw('foo') // -> '/'
 
 await db.get('foo') // Error: invalid JSON!
 ```
+
+You can also get a list of all keys that have been stored in your database:
+```js
+await db.getKeys()
+```
