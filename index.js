@@ -85,6 +85,19 @@ class S1 {
       throw new Error(`Error parsing JSON for key ${key}, did you mean to use getRaw?`)
     }
   }
+
+  /**
+   * Get a list of keys stored in the database.
+   * 
+   * @return {string[]} An array of stored keys
+   */
+  async getKeys() {
+    const res = await fetch(`${this.baseUrl}/db/`, {
+      headers: { 'Authorization': `Bearer ${this.token}` }
+    }) 
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`)
+    return await res.json()
+  }
 }
 
 module.exports = S1

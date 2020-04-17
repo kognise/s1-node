@@ -24,3 +24,9 @@ test('invalid json throws an error', async (t) => {
   await db.setRaw('invalid-json-key', '/')
   await t.throwsAsync(async () => await db.get('invalid-json-key'))
 })
+
+test('getKeys works', async (t) => {
+  await db.set('test-key')
+  const keys = await db.getKeys()
+  t.true(keys.includes('test-key'))
+})
