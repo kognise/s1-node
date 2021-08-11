@@ -6,6 +6,7 @@
   "repository": "https://github.com/kognise/s1-node/",
   "author": "Kognise <hi@kognise.dev>",
   "license": "UNLICENSED",
+  "types": "s1db.d.ts",
   "private": false,
   "scripts": {
     "test": "ava"
